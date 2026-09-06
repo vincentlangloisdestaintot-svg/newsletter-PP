@@ -1,0 +1,33 @@
+# Calendrier des échéances récurrentes (charte, section 8).
+#
+# Les dates fixes (BCE, Fed, agences de notation) doivent être mises à jour une
+# fois par an à partir des calendriers publiés par les émetteurs. Une date
+# passée est ignorée ; une liste vide ne casse rien, elle réduit simplement la
+# capacité du brief à annoncer une échéance à 48 h.
+#
+# Les échéances calculées (INSEE, France Assureurs, épargne réglementée) sont
+# dérivées automatiquement dans veille/calendrier.py et n'ont pas à figurer ici.
+
+bce:
+  emetteur: "BCE"
+  intitule: "Décision de politique monétaire du Conseil des gouverneurs"
+  url: "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+  dates: []          # ex. 2026-09-10, à renseigner depuis le calendrier BCE publié
+
+fed:
+  emetteur: "Federal Reserve"
+  intitule: "Décision du FOMC"
+  url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+  dates: []
+
+notation:
+  emetteur: "Agences de notation"
+  intitule: "Revue de la note souveraine France"
+  url: "https://www.aft.gouv.fr/fr/notations"
+  dates: []
+
+aft:
+  emetteur: "Agence France Trésor"
+  intitule: "Adjudication OAT / BTF"
+  url: "https://www.aft.gouv.fr/fr/calendrier-adjudications"
+  dates: []
